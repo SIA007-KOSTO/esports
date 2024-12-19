@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eSports Arena</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00d4ff;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      font-weight: bold;
+      margin: 0 15px;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00d4ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: url('https://via.placeholder.com/1920x700') no-repeat center center/cover;
+      color: #ffffff;
+
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background: #00d4ff;
+      border: none;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #008fb3;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00d4ff;
+    }
+
+    .about p {
+      font-size: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Teams Section */
+    .teams {
+      padding: 50px 20px;
+      background-color: #121212;
+      text-align: center;
+    }
+
+    .teams h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00d4ff;
+    }
+
+    .team-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .team {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+    }
+
+    .team img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .team h3 {
+      margin: 10px 0;
+    }
+
+    /* Events Section */
+    .events {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    .events h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00d4ff;
+    }
+
+    .event-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .event {
+      background-color: #121212;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    .event h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #121212;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00d4ff;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background: #00d4ff;
+      border: none;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact button:hover {
+      background: #008fb3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <h1>eSports Arena</h1>
+      <nav>
+        About
+        Teams
+        Events
+        Contact
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="https://i.postimg.cc/vmw3Ggz2/background-sia.jpg" alt="Becground">
+    <h1>Welcome to the eSports Arena</h1>
+    <p>Join the ultimate gaming experience!</p >
+    <button>Get Started</button>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are dedicated to fostering the competitive spirit of eSports by hosting tournaments, creating gaming communities, and showcasing the best players around the globe.</p >
+  </section>
+
+  <section id="teams" class="teams">
+    <h2>Our Teams</h2>
+    <div class="team-list">
+      <div class="team">
+        <img src="https://i.postimg.cc/xCpBnkhN/team-alpha-sia.jpg" alt="Team 1">
+        <h3>Team Alpha</h3>
+        <p>The champions of strategy and skill.</p >
+      </div>
+      <div class="team">
+        <img src="https://i.postimg.cc/t413Mstm/omega-sia.jpg" alt="Team 2">
+        <h3>Team Omega</h3>
+        <p>A powerhouse of elite gamers.</p >
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-list">
+      <div class="event">
+        <h3>Global eSports Championship</h3>
+        <p>June 2024 - Online</p >
+      </div>
+      <div class="event">
+        <h3>Regional Qualifiers</h3>
+        <p>August 2024 - New York</p >
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 eSports Arena by SIA-L236271016 . All rights reserved.</p >
+  </footer>
+</body>
+</html>
